@@ -5,6 +5,7 @@ import moviesData from './moviesData';
 import AddMovieModal from './components/AddMovie';
 import TitleFilter from './components/Filter';
 import "./App.css"
+import MovieList from './components/MovieList';
 
 function App() {
   const [movies, setMovies] = useState(moviesData);
@@ -42,6 +43,7 @@ function App() {
         {titleFilteredMovies.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
         ))}
+    
       </div>
     </div>
   );
